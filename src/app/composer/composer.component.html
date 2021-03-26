@@ -1,0 +1,64 @@
+<mat-accordion>
+  <mat-expansion-panel expanded="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Théorie musicale
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column" fxLayoutGap="30px">
+      <!-- SAISIE DE LA TONALITE -->
+      <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
+        <mat-form-field fxFlex="40" appearance="standard">
+          <mat-label>Choisir une gamme</mat-label>
+          <mat-select [(ngModel)]="selectedScaleType" (selectionChange)="onScaleTypeSelectionChange()">
+            <mat-option *ngFor="let scale of scaleTypes" [value]="scale">
+              {{scale.name}}
+              <span *ngIf="scale.aliases.length !== 0">
+              ({{scale.aliases}})
+            </span>
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field fxFlex="15" appearance="standard">
+          <mat-label>Choisir une tonalité</mat-label>
+          <mat-select [(ngModel)]="selectedNote" (selectionChange)="onScaleTypeSelectionChange()">
+            <mat-option *ngFor="let note of notesPossibles" [value]="note">{{note}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <!-- ECHELLE CHROMATIQUE ET NOTES DE LA GAMME -->
+      <div *ngIf="chromas.length !== 0" fxLayout="column" fxLayoutGap="30px">
+        <!-- ECHELLE CHROMATIQUE -->
+        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="start">
+          <span fxFlex="20">Echelle chromatique :</span>
+          <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
+            <div [fxFlex]="chroma*50+'px'" *ngFor="let chroma of chromas">
+              <div
+                [ngClass]="{'semiTone': (chroma === 0.5), 'tone': (chroma === 1), 'moreThanATone': (chroma > 1)}">{{ chroma }}</div>
+            </div>
+          </div>
+        </div>
+        <!-- NOTES DE LA GAMME -->
+        <div fxLayout="row" fxLayoutAlign="start">
+          <span fxFlex="20">Notes :</span>
+          <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
+            <div *ngFor="let note of notes;let i = index">
+              <span class="note" [fxFlex]="(i === chromas.length) ? 10 : chromas[i]*50+'px'">{{note}}</span>
+            </div>
+          </div>
+        </div>
+        <!-- HARMONISATION DE LA GAMME -->
+        <div fxLayout="row" fxLayoutAlign="start">
+          <span fxFlex="20">Harmonisation :</span>
+          <div fxLayout="row" fxLayoutGap="22px" fxLayoutAlign="start">
+            <div *ngFor="let chord of chords;let i = index">
+              <div class="chord" [ngClass]="getChordQuality(chord)">{{chord}}</div>
+              {{getChordQuality(chord)}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+

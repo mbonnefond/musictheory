@@ -1,0 +1,48 @@
+/* Composer styles */
+.semiTone{
+  background-color: lightskyblue;
+  border: 1px solid darkblue;
+  text-align: center;
+  color: white;
+  font-size: small;
+}
+
+.tone{
+  background-color: cornflowerblue;
+  border: 1px solid darkblue;
+  text-align: center;
+  color: white;
+}
+
+.moreThanATone{
+  background-color: darkslateblue;
+  border: 1px solid darkblue;
+  text-align: center;
+  color: white;
+}
+
+.note{
+  color: midnightblue;
+  font-size: large;
+}
+
+.chord{
+  font-size: large;
+  font-weight: bold;
+}
+
+.minor{
+  color:firebrick;
+}
+
+.major{
+  color:green;
+}
+
+.diminished{
+  color:mediumpurple;
+}
+
+.augmented{
+  color:lightseagreen;
+}
