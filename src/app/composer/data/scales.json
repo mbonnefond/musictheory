@@ -1,0 +1,1610 @@
+{
+    "scales": [
+        {
+            "empty": false,
+            "name": "aeolian",
+            "setNum": 2906,
+            "chroma": "101101011010",
+            "normalized": "101010110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5P",
+                "6m",
+                "7m"
+            ],
+            "aliases": [
+                "minor"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "altered",
+            "setNum": 3498,
+            "chroma": "110110101010",
+            "normalized": "101010101101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4d",
+                "5d",
+                "6m",
+                "7m"
+            ],
+            "aliases": [
+                "super locrian",
+                "diminished whole tone",
+                "pomeroy"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "augmented",
+            "setNum": 2457,
+            "chroma": "100110011001",
+            "normalized": "100110011001",
+            "intervals": [
+                "1P",
+                "2A",
+                "3M",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "augmented heptatonic",
+            "setNum": 2521,
+            "chroma": "100111011001",
+            "normalized": "100110011101",
+            "intervals": [
+                "1P",
+                "2A",
+                "3M",
+                "4P",
+                "5P",
+                "5A",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "balinese",
+            "setNum": 3417,
+            "chroma": "110101011001",
+            "normalized": "100111010101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4P",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "bebop",
+            "setNum": 2775,
+            "chroma": "101011010111",
+            "normalized": "101011010111",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5P",
+                "6M",
+                "7m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "bebop locrian",
+            "setNum": 3450,
+            "chroma": "110101111010",
+            "normalized": "101011010111",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4P",
+                "5d",
+                "5P",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "bebop major",
+            "setNum": 2781,
+            "chroma": "101011011101",
+            "normalized": "101011011101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5P",
+                "5A",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "bebop minor",
+            "setNum": 3030,
+            "chroma": "101111010110",
+            "normalized": "101011010111",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "3M",
+                "4P",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "chromatic",
+            "setNum": 4095,
+            "chroma": "111111111111",
+            "normalized": "111111111111",
+            "intervals": [
+                "1P",
+                "2m",
+                "2M",
+                "3m",
+                "3M",
+                "4P",
+                "5d",
+                "5P",
+                "6m",
+                "6M",
+                "7m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "composite blues",
+            "setNum": 3062,
+            "chroma": "101111110110",
+            "normalized": "101011111101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "3M",
+                "4P",
+                "5d",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "diminished",
+            "setNum": 2925,
+            "chroma": "101101101101",
+            "normalized": "101101101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5d",
+                "6m",
+                "6M",
+                "7M"
+            ],
+            "aliases": [
+                "whole-half diminished"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "dorian",
+            "setNum": 2902,
+            "chroma": "101101010110",
+            "normalized": "101010110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "dorian #4",
+            "setNum": 2870,
+            "chroma": "101100110110",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4A",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "dorian b2",
+            "setNum": 3414,
+            "chroma": "110101010110",
+            "normalized": "101010101101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4P",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": [
+                "phrygian #6",
+                "melodic minor second mode"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "double harmonic lydian",
+            "setNum": 3257,
+            "chroma": "110010111001",
+            "normalized": "100101110011",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4A",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "double harmonic major",
+            "setNum": 3289,
+            "chroma": "110011011001",
+            "normalized": "100110110011",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4P",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": [
+                "gypsy"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "egyptian",
+            "setNum": 2642,
+            "chroma": "101001010010",
+            "normalized": "100101001010",
+            "intervals": [
+                "1P",
+                "2M",
+                "4P",
+                "5P",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "enigmatic",
+            "setNum": 3243,
+            "chroma": "110010101011",
+            "normalized": "100101010111",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "5d",
+                "6m",
+                "7m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "flamenco",
+            "setNum": 3506,
+            "chroma": "110110110010",
+            "normalized": "100101101101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "3M",
+                "4A",
+                "5P",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "flat six pentatonic",
+            "setNum": 2712,
+            "chroma": "101010011000",
+            "normalized": "100010101001",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "5P",
+                "6m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "flat three pentatonic",
+            "setNum": 2836,
+            "chroma": "101100010100",
+            "normalized": "100010100101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "5P",
+                "6M"
+            ],
+            "aliases": [
+                "kumoi"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "half-whole diminished",
+            "setNum": 3510,
+            "chroma": "110110110110",
+            "normalized": "101101101101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "3M",
+                "4A",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": [
+                "dominant diminished",
+                "messiaen's mode #2"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "harmonic major",
+            "setNum": 2777,
+            "chroma": "101011011001",
+            "normalized": "100110101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "harmonic minor",
+            "setNum": 2905,
+            "chroma": "101101011001",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "hirajoshi",
+            "setNum": 2840,
+            "chroma": "101100011000",
+            "normalized": "100010110001",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "5P",
+                "6m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "hungarian major",
+            "setNum": 2486,
+            "chroma": "100110110110",
+            "normalized": "100110110110",
+            "intervals": [
+                "1P",
+                "2A",
+                "3M",
+                "4A",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "hungarian minor",
+            "setNum": 2873,
+            "chroma": "101100111001",
+            "normalized": "100110110011",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4A",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "ichikosucho",
+            "setNum": 2805,
+            "chroma": "101011110101",
+            "normalized": "101011010111",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5d",
+                "5P",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "in-sen",
+            "setNum": 3154,
+            "chroma": "110001010010",
+            "normalized": "100010100101",
+            "intervals": [
+                "1P",
+                "2m",
+                "4P",
+                "5P",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "ionian pentatonic",
+            "setNum": 2257,
+            "chroma": "100011010001",
+            "normalized": "100011000110",
+            "intervals": [
+                "1P",
+                "3M",
+                "4P",
+                "5P",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "iwato",
+            "setNum": 3170,
+            "chroma": "110001100010",
+            "normalized": "100010110001",
+            "intervals": [
+                "1P",
+                "2m",
+                "4P",
+                "5d",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "kafi raga",
+            "setNum": 2519,
+            "chroma": "100111010111",
+            "normalized": "100111010111",
+            "intervals": [
+                "1P",
+                "3m",
+                "3M",
+                "4P",
+                "5P",
+                "6M",
+                "7m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "kumoijoshi",
+            "setNum": 3160,
+            "chroma": "110001011000",
+            "normalized": "100010110001",
+            "intervals": [
+                "1P",
+                "2m",
+                "4P",
+                "5P",
+                "6m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "leading whole tone",
+            "setNum": 2731,
+            "chroma": "101010101011",
+            "normalized": "101010101011",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4A",
+                "5A",
+                "7m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "locrian",
+            "setNum": 3434,
+            "chroma": "110101101010",
+            "normalized": "101010110101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4P",
+                "5d",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "locrian #2",
+            "setNum": 2922,
+            "chroma": "101101101010",
+            "normalized": "101010101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5d",
+                "6m",
+                "7m"
+            ],
+            "aliases": [
+                "half-diminished",
+                "aeolian b5"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "locrian 6",
+            "setNum": 3430,
+            "chroma": "110101100110",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4P",
+                "5d",
+                "6M",
+                "7m"
+            ],
+            "aliases": [
+                "locrian natural 6",
+                "locrian sharp 6"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "locrian major",
+            "setNum": 2794,
+            "chroma": "101011101010",
+            "normalized": "101010101011",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5d",
+                "6m",
+                "7m"
+            ],
+            "aliases": [
+                "arabian"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "locrian pentatonic",
+            "setNum": 2402,
+            "chroma": "100101100010",
+            "normalized": "100010100101",
+            "intervals": [
+                "1P",
+                "3m",
+                "4P",
+                "5d",
+                "7m"
+            ],
+            "aliases": [
+                "minor seven flat five pentatonic"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "lydian",
+            "setNum": 2741,
+            "chroma": "101010110101",
+            "normalized": "101010110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4A",
+                "5P",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "lydian #5P pentatonic",
+            "setNum": 2217,
+            "chroma": "100010101001",
+            "normalized": "100010101001",
+            "intervals": [
+                "1P",
+                "3M",
+                "4A",
+                "5A",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "lydian #9",
+            "setNum": 2485,
+            "chroma": "100110110101",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2A",
+                "3M",
+                "4A",
+                "5P",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "lydian augmented",
+            "setNum": 2733,
+            "chroma": "101010101101",
+            "normalized": "101010101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4A",
+                "5A",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "lydian diminished",
+            "setNum": 2869,
+            "chroma": "101100110101",
+            "normalized": "100110101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4A",
+                "5P",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "lydian dominant",
+            "setNum": 2742,
+            "chroma": "101010110110",
+            "normalized": "101010101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4A",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": [
+                "lydian b7",
+                "overtone"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "lydian dominant pentatonic",
+            "setNum": 2226,
+            "chroma": "100010110010",
+            "normalized": "100010110010",
+            "intervals": [
+                "1P",
+                "3M",
+                "4A",
+                "5P",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "lydian minor",
+            "setNum": 2746,
+            "chroma": "101010111010",
+            "normalized": "101010101011",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4A",
+                "5P",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "lydian pentatonic",
+            "setNum": 2225,
+            "chroma": "100010110001",
+            "normalized": "100010110001",
+            "intervals": [
+                "1P",
+                "3M",
+                "4A",
+                "5P",
+                "7M"
+            ],
+            "aliases": [
+                "chinese"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "major",
+            "setNum": 2773,
+            "chroma": "101011010101",
+            "normalized": "101010110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5P",
+                "6M",
+                "7M"
+            ],
+            "aliases": [
+                "ionian"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "major augmented",
+            "setNum": 2765,
+            "chroma": "101011001101",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5A",
+                "6M",
+                "7M"
+            ],
+            "aliases": [
+                "major #5",
+                "ionian augmented",
+                "ionian #5"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "major blues",
+            "setNum": 2964,
+            "chroma": "101110010100",
+            "normalized": "100101001011",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "3M",
+                "5P",
+                "6M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "major pentatonic",
+            "setNum": 2708,
+            "chroma": "101010010100",
+            "normalized": "100101001010",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "5P",
+                "6M"
+            ],
+            "aliases": [
+                "pentatonic"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "malkos raga",
+            "setNum": 2378,
+            "chroma": "100101001010",
+            "normalized": "100101001010",
+            "intervals": [
+                "1P",
+                "3m",
+                "4P",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "melodic minor",
+            "setNum": 2901,
+            "chroma": "101101010101",
+            "normalized": "101010101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5P",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "messiaen's mode #3",
+            "setNum": 3003,
+            "chroma": "101110111011",
+            "normalized": "101110111011",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "3M",
+                "4A",
+                "5P",
+                "6m",
+                "7m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "messiaen's mode #4",
+            "setNum": 3705,
+            "chroma": "111001111001",
+            "normalized": "100111100111",
+            "intervals": [
+                "1P",
+                "2m",
+                "2M",
+                "4P",
+                "4A",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "messiaen's mode #5",
+            "setNum": 3185,
+            "chroma": "110001110001",
+            "normalized": "100011100011",
+            "intervals": [
+                "1P",
+                "2m",
+                "4P",
+                "4A",
+                "5P",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "messiaen's mode #6",
+            "setNum": 2795,
+            "chroma": "101011101011",
+            "normalized": "101011101011",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "4A",
+                "5A",
+                "6A",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "messiaen's mode #7",
+            "setNum": 3965,
+            "chroma": "111101111101",
+            "normalized": "101111101111",
+            "intervals": [
+                "1P",
+                "2m",
+                "2M",
+                "3m",
+                "4P",
+                "4A",
+                "5P",
+                "6m",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "minor #7M pentatonic",
+            "setNum": 2385,
+            "chroma": "100101010001",
+            "normalized": "100011001010",
+            "intervals": [
+                "1P",
+                "3m",
+                "4P",
+                "5P",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "minor bebop",
+            "setNum": 2907,
+            "chroma": "101101011011",
+            "normalized": "101011011101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5P",
+                "6m",
+                "7m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "minor blues",
+            "setNum": 2418,
+            "chroma": "100101110010",
+            "normalized": "100101001011",
+            "intervals": [
+                "1P",
+                "3m",
+                "4P",
+                "5d",
+                "5P",
+                "7m"
+            ],
+            "aliases": [
+                "blues"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "minor hexatonic",
+            "setNum": 2897,
+            "chroma": "101101010001",
+            "normalized": "100011011010",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5P",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "minor pentatonic",
+            "setNum": 2386,
+            "chroma": "100101010010",
+            "normalized": "100101001010",
+            "intervals": [
+                "1P",
+                "3m",
+                "4P",
+                "5P",
+                "7m"
+            ],
+            "aliases": [
+                "vietnamese 2"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "minor six diminished",
+            "setNum": 2909,
+            "chroma": "101101011101",
+            "normalized": "101011101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "4P",
+                "5P",
+                "6m",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "minor six pentatonic",
+            "setNum": 2388,
+            "chroma": "100101010100",
+            "normalized": "100100101010",
+            "intervals": [
+                "1P",
+                "3m",
+                "4P",
+                "5P",
+                "6M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "mixolydian",
+            "setNum": 2774,
+            "chroma": "101011010110",
+            "normalized": "101010110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": [
+                "dominant"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "mixolydian b6",
+            "setNum": 2778,
+            "chroma": "101011011010",
+            "normalized": "101010101101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4P",
+                "5P",
+                "6m",
+                "7m"
+            ],
+            "aliases": [
+                "melodic minor fifth mode",
+                "hindu"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "mixolydian pentatonic",
+            "setNum": 2258,
+            "chroma": "100011010010",
+            "normalized": "100011010010",
+            "intervals": [
+                "1P",
+                "3M",
+                "4P",
+                "5P",
+                "7m"
+            ],
+            "aliases": [
+                "indian"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "mystery #1",
+            "setNum": 3242,
+            "chroma": "110010101010",
+            "normalized": "100101010101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "5d",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "neopolitan major",
+            "setNum": 3413,
+            "chroma": "110101010101",
+            "normalized": "101010101011",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4P",
+                "5P",
+                "6M",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "neopolitan major pentatonic",
+            "setNum": 2274,
+            "chroma": "100011100010",
+            "normalized": "100010100011",
+            "intervals": [
+                "1P",
+                "3M",
+                "4P",
+                "5d",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "oriental",
+            "setNum": 3302,
+            "chroma": "110011100110",
+            "normalized": "100110110011",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4P",
+                "5d",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "pelog",
+            "setNum": 3352,
+            "chroma": "110100011000",
+            "normalized": "100011000110",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "5P",
+                "6m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "persian",
+            "setNum": 3305,
+            "chroma": "110011101001",
+            "normalized": "100111001110",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4P",
+                "5d",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "phrygian",
+            "setNum": 3418,
+            "chroma": "110101011010",
+            "normalized": "101010110101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4P",
+                "5P",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "phrygian dominant",
+            "setNum": 3290,
+            "chroma": "110011011010",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4P",
+                "5P",
+                "6m",
+                "7m"
+            ],
+            "aliases": [
+                "spanish",
+                "phrygian major"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "piongio",
+            "setNum": 2646,
+            "chroma": "101001010110",
+            "normalized": "100101011010",
+            "intervals": [
+                "1P",
+                "2M",
+                "4P",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "prometheus",
+            "setNum": 2726,
+            "chroma": "101010100110",
+            "normalized": "100110101010",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4A",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "prometheus neopolitan",
+            "setNum": 3238,
+            "chroma": "110010100110",
+            "normalized": "100101001101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4A",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "purvi raga",
+            "setNum": 3321,
+            "chroma": "110011111001",
+            "normalized": "100111001111",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4P",
+                "4A",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "ritusen",
+            "setNum": 2644,
+            "chroma": "101001010100",
+            "normalized": "100101001010",
+            "intervals": [
+                "1P",
+                "2M",
+                "4P",
+                "5P",
+                "6M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "romanian minor",
+            "setNum": 2870,
+            "chroma": "101100110110",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2M",
+                "3m",
+                "5d",
+                "5P",
+                "6M",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "scriabin",
+            "setNum": 3220,
+            "chroma": "110010010100",
+            "normalized": "100100101001",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "5P",
+                "6M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "six tone symmetric",
+            "setNum": 3276,
+            "chroma": "110011001100",
+            "normalized": "100110011001",
+            "intervals": [
+                "1P",
+                "2m",
+                "3M",
+                "4P",
+                "5A",
+                "6M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "spanish heptatonic",
+            "setNum": 3546,
+            "chroma": "110111011010",
+            "normalized": "101011011101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "3M",
+                "4P",
+                "5P",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "super locrian pentatonic",
+            "setNum": 2466,
+            "chroma": "100110100010",
+            "normalized": "100010100110",
+            "intervals": [
+                "1P",
+                "3m",
+                "4d",
+                "5d",
+                "7m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "todi raga",
+            "setNum": 3385,
+            "chroma": "110100111001",
+            "normalized": "100111001110",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4A",
+                "5P",
+                "6m",
+                "7M"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "ultralocrian",
+            "setNum": 3500,
+            "chroma": "110110101100",
+            "normalized": "100110110101",
+            "intervals": [
+                "1P",
+                "2m",
+                "3m",
+                "4d",
+                "5d",
+                "6m",
+                "7d"
+            ],
+            "aliases": [
+                "superlocrian bb7",
+                "·superlocrian diminished"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "vietnamese 1",
+            "setNum": 2392,
+            "chroma": "100101011000",
+            "normalized": "100010010101",
+            "intervals": [
+                "1P",
+                "3m",
+                "4P",
+                "5P",
+                "6m"
+            ],
+            "aliases": []
+        },
+        {
+            "empty": false,
+            "name": "whole tone",
+            "setNum": 2730,
+            "chroma": "101010101010",
+            "normalized": "101010101010",
+            "intervals": [
+                "1P",
+                "2M",
+                "3M",
+                "4A",
+                "5A",
+                "7m"
+            ],
+            "aliases": [
+                "messiaen's mode #1"
+            ]
+        },
+        {
+            "empty": false,
+            "name": "whole tone pentatonic",
+            "setNum": 2218,
+            "chroma": "100010101010",
+            "normalized": "100010101010",
+            "intervals": [
+                "1P",
+                "3M",
+                "5d",
+                "6m",
+                "7m"
+            ],
+            "aliases": []
+        }
+    ]
+}

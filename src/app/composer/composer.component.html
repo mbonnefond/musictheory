@@ -27,14 +27,24 @@
         </mat-form-field>
       </div>
       <!-- ECHELLE CHROMATIQUE ET NOTES DE LA GAMME -->
-      <div *ngIf="chromas.length !== 0" fxLayout="column" fxLayoutGap="30px">
+      <div *ngIf="scalePattern.length !== 0" fxLayout="column" fxLayoutGap="30px">
         <!-- ECHELLE CHROMATIQUE -->
         <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="start">
           <span fxFlex="20">Echelle chromatique :</span>
           <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
-            <div [fxFlex]="chroma*50+'px'" *ngFor="let chroma of chromas">
+            <div [fxFlex]="20+chroma*80+'px'" *ngFor="let chroma of scalePattern">
               <div [ngClass]="{'semiTone': (chroma === 0.5), 'tone': (chroma === 1), 'moreThanATone': (chroma > 1)}">{{
                 chroma }}</div>
+            </div>
+          </div>
+        </div>
+        <!-- INTERVALLES -->
+        <div fxLayout="row" fxLayoutAlign="start">
+          <span fxFlex="20">Intervalles :</span>
+          <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
+            <div *ngFor="let note of scaleNotes;let i = index">
+              <span 
+                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*80+'px'">{{note.intervalName}}</span>
             </div>
           </div>
         </div>
@@ -42,19 +52,20 @@
         <div fxLayout="row" fxLayoutAlign="start">
           <span fxFlex="20">Notes :</span>
           <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
-            <div *ngFor="let note of notes;let i = index">
-              <span class="note" [fxFlex]="(i === chromas.length) ? 10 : chromas[i]*50+'px'">{{note}}</span>
+            <div *ngFor="let note of scaleNotes;let i = index">
+              <span class="note"
+                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*80+'px'">{{note.name}}</span>
             </div>
           </div>
         </div>
         <!-- HARMONISATION DE LA GAMME -->
         <div fxLayout="row" fxLayoutAlign="start">
           <span fxFlex="20">Harmonisation :</span>
-          <div fxLayout="row" fxLayoutGap="22px" fxLayoutAlign="start">
-            <div *ngFor="let chord of chords;let i = index">
-              <div fxLayout="column" fxLayoutGap="10px">
-                <div class="chord" [ngClass]="getChordQuality(chord)">{{chord? chord : '-'}}</div>
-              </div>
+          <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
+            <div *ngFor="let chord of scaleChords;let i = index">
+                <span class="chord" 
+                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*80+'px'"
+                [ngClass]="getChordQuality(chord)">{{chord? chord : '-'}}</span>
             </div>
           </div>
         </div>
