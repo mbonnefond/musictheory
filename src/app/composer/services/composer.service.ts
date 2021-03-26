@@ -17,7 +17,6 @@ export class ComposerService {
   
   constructor() { 
     //this.scaleTypes = ScaleDictionary.all().sort(this.sortByTypeAndName);
-    //console.log(this.scaleTypes);
     this.scaleTypes = (scaleDictionary as ScaleType[]).sort(this.sortByTypeAndName);
   }
 
