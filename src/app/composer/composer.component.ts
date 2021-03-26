@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ScaleType} from '@tonaljs/scale-type'
-import {Scale, ScaleDictionary, Note, Interval, Chord} from '@tonaljs/tonal';
+import { Component, OnInit } from '@angular/core';
+import { ScaleType } from '@tonaljs/scale-type'
+import { Scale, ScaleDictionary, Note, Interval, Chord, Key, ChordDictionary} from '@tonaljs/tonal';
 
 function sortByTypeAndName(a: ScaleType, b: ScaleType): number {
   return a.name.localeCompare(b.name);
@@ -20,43 +20,41 @@ export interface ScaleNote {
 
 export class ComposerComponent implements OnInit {
   scaleTypes: ScaleType[];
-  notesPossibles: string[] = ['C', 'Db', 'D', 'Eb', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+  notesPossibles: string[] = ['C', 'Db', 'D', 'E', 'Eb', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
   selectedScaleType: ScaleType;
   chromas: number[];
-  notes: string[];
   selectedNote: string = 'C';
   chords: string[];
-  private scaleNotes: ScaleNote[];
+  scaleNotes: ScaleNote[];
+  notes: string[];
+  findChordNotes: string[] = ['', '', '', '', ''];
+  foundChord: string;
 
   constructor() {
     this.scaleTypes = ScaleDictionary.all().sort(sortByTypeAndName);
     this.selectedScaleType = ScaleDictionary.get('major');
     this.chromas = [];
-    this.notes = [];
     this.chords = [];
     this.scaleNotes = [];
+    this.findChordNotes;
   }
 
   ngOnInit(): void {
-    // this.scaleTypes.forEach(scale => {
-    //   console.log(scale.name + ' : ' + scale.intervals.length);
-    // });
     this.onScaleTypeSelectionChange();
+    ScaleDictionary.all().filter(scale => scale.intervals.length === 5).forEach(scale => console.log(scale.name));
+    console.log(Chord.detect(["F#","Ab","C"]));
   }
 
   onScaleTypeSelectionChange(): void {
     this.setNotesFromSelectedScale();
-    console.log(this.notes);
-    this.scaleNotes.forEach(note => console.log(note.name + ', '+note.interval));
     this.setChromasFromSelectedScale();
     this.setChordsFromSelectedScale(5);
-    console.log(this.chords);
-
   }
 
 
   private setNotesFromSelectedScale(): void {
     this.scaleNotes = [];
+    this.notes = [];
     Scale.get(this.selectedNote + " " + this.selectedScaleType.name).notes.forEach((note, index) => {
       this.scaleNotes.push({
         name: note,
@@ -67,6 +65,7 @@ export class ComposerComponent implements OnInit {
       name: this.scaleNotes[0].name + '1',
       interval: 8
     });
+    this.scaleNotes.forEach(scaleNote => this.notes.push(scaleNote.name))
   }
 
   setChromasFromSelectedScale(): void {
@@ -83,10 +82,9 @@ export class ComposerComponent implements OnInit {
 
 
   getChordFromNotes(notes: string[]): string {
-    const chord = Chord.detect(notes);
+    const chord = Chord.detect(notes.filter(note => note !== '' && note !== undefined && note !== null));
     return chord[0];
   }
-
 
   setChordsFromSelectedScale(intervalMax: number): void {
     let loopedNotesArray: ScaleNote[] = [];
@@ -104,10 +102,6 @@ export class ComposerComponent implements OnInit {
         let note: ScaleNote = this.getScaleNoteFromIntervalNumber(loopedNotesArray, this.scaleNotes[scaleNoteIndex], interval);
         if (note !== undefined && note !== null){
           chordNotes.push(note.name);
-          console.log("found note "+note.name + ' for +' + interval + ' from root ' + this.scaleNotes[scaleNoteIndex].name);
-        }
-        else{
-          console.log('no note found for +' + interval + ' from root ' + this.scaleNotes[scaleNoteIndex].name);
         }
       }
       chord = this.getChordFromNotes(chordNotes);
@@ -116,12 +110,9 @@ export class ComposerComponent implements OnInit {
   }
 
   getScaleNoteFromIntervalNumber(scaleNotes: ScaleNote[], rootNote: ScaleNote, intervalNumber: number): ScaleNote {
-    console.log('scaleNotes.length ' + scaleNotes.length);
     for (let i = 0 ; i < scaleNotes.length; i++) {
-      console.log('rootNote '+ rootNote.name +', intervalNumber '+intervalNumber+', scaleNotes['+i+']');
       if (scaleNotes[i].name === rootNote.name && scaleNotes[i].interval === rootNote.interval) {
         let tmp: ScaleNote = scaleNotes.find(note => {
-          console.log('note '+note.name+', '+note.interval + ' // scaleNotes['+i+'] '+scaleNotes[i].name + ', interval '+scaleNotes[i].interval);
           let test: boolean = note.interval - scaleNotes[i].interval === intervalNumber - 1;
           return (test);
           })!;
@@ -133,6 +124,10 @@ export class ComposerComponent implements OnInit {
 
   getChordQuality(chord: string): string {
     return Chord.get(chord).quality.toLowerCase();
+  }
+
+  onfindChordNotesChange(): void {
+    this.foundChord = this.getChordFromNotes(this.findChordNotes);
   }
 
 }

@@ -14,8 +14,8 @@
             <mat-option *ngFor="let scale of scaleTypes" [value]="scale">
               {{scale.name}}
               <span *ngIf="scale.aliases.length !== 0">
-              ({{scale.aliases}})
-            </span>
+                ({{scale.aliases}})
+              </span>
             </mat-option>
           </mat-select>
         </mat-form-field>
@@ -33,8 +33,8 @@
           <span fxFlex="20">Echelle chromatique :</span>
           <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
             <div [fxFlex]="chroma*50+'px'" *ngFor="let chroma of chromas">
-              <div
-                [ngClass]="{'semiTone': (chroma === 0.5), 'tone': (chroma === 1), 'moreThanATone': (chroma > 1)}">{{ chroma }}</div>
+              <div [ngClass]="{'semiTone': (chroma === 0.5), 'tone': (chroma === 1), 'moreThanATone': (chroma > 1)}">{{
+                chroma }}</div>
             </div>
           </div>
         </div>
@@ -52,13 +52,27 @@
           <span fxFlex="20">Harmonisation :</span>
           <div fxLayout="row" fxLayoutGap="22px" fxLayoutAlign="start">
             <div *ngFor="let chord of chords;let i = index">
-              <div class="chord" [ngClass]="getChordQuality(chord)">{{chord}}</div>
-              {{getChordQuality(chord)}}
+              <div fxLayout="column" fxLayoutGap="10px">
+                <div class="chord" [ngClass]="getChordQuality(chord)">{{chord? chord : '-'}}</div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- ACCORD -->
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <span fxFlex="20" fxFlexAlign="center center">Accord :</span>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap='30px'>
+          <div *ngFor="let i of [0,1,2,3,4]">
+            <mat-form-field fxFlex="35px" appearance="standard">
+              <mat-select [(ngModel)]="findChordNotes[i]" (selectionChange)="onfindChordNotesChange()">
+                <mat-option *ngFor="let note of notesPossibles" [value]="note">{{note}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="chord" [ngClass]="getChordQuality(foundChord)">{{foundChord ? foundChord : '-'}}</div>
         </div>
       </div>
     </div>
   </mat-expansion-panel>
 </mat-accordion>
-
