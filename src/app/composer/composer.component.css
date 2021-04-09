@@ -27,8 +27,8 @@
 }
 
 .chord{
-  font-size: large;
   font-weight: bold;
+  overflow-wrap: break-word;
 }
 
 .minor{
@@ -45,4 +45,11 @@
 
 .augmented{
   color:lightseagreen;
+}
+
+
+div mat-button-toggle-group.enrichissement {
+  font-size: 10px;
+  height: 16px!important;
+  align-items: center;
 }

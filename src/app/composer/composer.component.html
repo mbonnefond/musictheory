@@ -30,9 +30,9 @@
       <div *ngIf="scalePattern.length !== 0" fxLayout="column" fxLayoutGap="30px">
         <!-- ECHELLE CHROMATIQUE -->
         <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="start">
-          <span fxFlex="20">Echelle chromatique :</span>
+          <span fxFlex="15">Echelle chromatique :</span>
           <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
-            <div [fxFlex]="20+chroma*80+'px'" *ngFor="let chroma of scalePattern">
+            <div [fxFlex]="20+chroma*chromaWidth+'px'" *ngFor="let chroma of scalePattern">
               <div [ngClass]="{'semiTone': (chroma === 0.5), 'tone': (chroma === 1), 'moreThanATone': (chroma > 1)}">{{
                 chroma }}</div>
             </div>
@@ -40,31 +40,39 @@
         </div>
         <!-- INTERVALLES -->
         <div fxLayout="row" fxLayoutAlign="start">
-          <span fxFlex="20">Intervalles :</span>
+          <span fxFlex="15">Intervalles :</span>
           <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
-            <div *ngFor="let note of scaleNotes;let i = index">
-              <span 
-                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*80+'px'">{{note.intervalName}}</span>
+            <div *ngFor="let note of scaleNotes.slice(0,scaleNotes.length-1);let i = index">
+              <span
+                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*chromaWidth+'px'">{{note.intervalName}}</span>
             </div>
           </div>
         </div>
         <!-- NOTES DE LA GAMME -->
         <div fxLayout="row" fxLayoutAlign="start">
-          <span fxFlex="20">Notes :</span>
+          <span fxFlex="15">Notes :</span>
           <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
-            <div *ngFor="let note of scaleNotes;let i = index">
+            <div *ngFor="let note of scaleNotes.slice(0,scaleNotes.length-1);let i = index">
               <span class="note"
-                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*80+'px'">{{note.name}}</span>
+                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*chromaWidth+'px'">{{note.name}}</span>
             </div>
           </div>
         </div>
         <!-- HARMONISATION DE LA GAMME -->
         <div fxLayout="row" fxLayoutAlign="start">
-          <span fxFlex="20">Harmonisation :</span>
+          <div fxLayout="column" fxFlex="15">
+            <span>Harmonisation :</span>
+            <mat-button-toggle-group class='enrichissement' fxFlex="20" vertical="false" appearance="legacy"
+              [value]="intervalleMax" (change)="onToggleEmbellishChange($event)">
+              <mat-button-toggle [value]="7">7</mat-button-toggle>
+              <mat-button-toggle [value]="9">9</mat-button-toggle>
+              <mat-button-toggle [value]="11">11</mat-button-toggle>
+              <mat-button-toggle [value]="12">13</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
           <div fxLayout="row" fxLayoutGap="2px" fxLayoutAlign="start">
             <div *ngFor="let chord of scaleChords;let i = index">
-                <span class="chord" 
-                [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*80+'px'"
+              <span class="chord" [fxFlex]="(i === scalePattern.length) ? 10 : 20+scalePattern[i]*chromaWidth+'px'"
                 [ngClass]="getChordQuality(chord)">{{chord? chord : '-'}}</span>
             </div>
           </div>
@@ -72,7 +80,9 @@
       </div>
       <!-- ACCORD -->
       <div fxLayout="row" fxLayoutAlign="start center">
-        <span fxFlex="20" fxFlexAlign="center center">Accord :</span>
+        <div fxFlex="15" fxFlexAlign="center center">
+          <span>Accord</span>
+        </div>
         <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap='30px'>
           <div *ngFor="let i of [0,1,2,3,4]">
             <mat-form-field fxFlex="35px" appearance="standard">

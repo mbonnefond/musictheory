@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { ScaleType } from '@tonaljs/scale-type'
 import { Scale, ScaleDictionary, Note, Interval, Chord, Key, ChordDictionary } from '@tonaljs/tonal';
 import { ScaleNote } from './interfaces/scale-note';
@@ -21,6 +22,10 @@ export class ComposerComponent implements OnInit {
   scalePattern: number[];
   scaleNotes: ScaleNote[];
   scaleChords: string[];
+  withSeventh: boolean;
+  intervalleMax: number;
+  chromaWidth: number;
+
 
   constructor(private composerService: ComposerService) {
     this.notesPossibles = ComposerService.notesPossibles;
@@ -32,6 +37,8 @@ export class ComposerComponent implements OnInit {
     this.scaleChords = [];
     this.findChordNotes = ['', '', '', '', ''];
     this.foundChord = undefined;
+    this.intervalleMax = 5;
+    this.chromaWidth = 80;
   }
 
   ngOnInit(): void {
@@ -51,7 +58,7 @@ export class ComposerComponent implements OnInit {
     // Mise à jour de l'échelle chromatique
     this.scalePattern = this.composerService.getscalePattern(this.selectedNote, this.scaleNotes);
     // Mise à jour des accords de la gamme
-    this.scaleChords = this.composerService.getChordsOfScale(this.scaleNotes, 5);
+    this.updateScaleChords();
   }
 
   getChordQuality(chord: string): string {
@@ -62,4 +69,15 @@ export class ComposerComponent implements OnInit {
     this.foundChord = this.composerService.getChordFromNotes(this.findChordNotes);
   }
 
+  onToggleEmbellishChange(change: MatButtonToggleChange) {
+    this.intervalleMax = change.value;
+    this.updateScaleChords();
+  }
+
+  updateScaleChords(): void {
+    console.log("Update with " + this.intervalleMax + 'th');
+    this.scaleChords.length = 0;
+    this.composerService.getChordsOfScale(this.scaleNotes, this.intervalleMax)
+      .forEach(chord => this.scaleChords.push(chord));
+  }
 }
